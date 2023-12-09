@@ -11,14 +11,13 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="800.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.examprep.StudentViewController">
    <children>
       <VBox layoutY="58.0">
          <children>
             <TableView fx:id="studentTableView" prefHeight="300.0" prefWidth="750.0">
               <columns>
-                <TableColumn fx:id="StudentNumberColumn" prefWidth="75.0" text="Student Number" />
+                <TableColumn fx:id="studentNumberColumn" prefWidth="75.0" text="Student Number" />
                 <TableColumn fx:id="firstNameColumn" prefWidth="75.0" text="First Name" />
                   <TableColumn fx:id="lastNameColumn" prefWidth="75.0" text="Last Name" />
                   <TableColumn fx:id="averageGradeColumn" prefWidth="75.0" text="Average Grade" />

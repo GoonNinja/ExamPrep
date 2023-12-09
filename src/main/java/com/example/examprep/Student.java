@@ -88,6 +88,7 @@ public class Student {
         return (firstName.toLowerCase().contains(searchTerm) ||
                 Integer.toString(studentNumber).contains(searchTerm) ||
                 lastName.toLowerCase().contains(searchTerm) ||
+                email.contains(searchTerm) ||
                 avgGrade.contains(searchTerm));
     }
 
