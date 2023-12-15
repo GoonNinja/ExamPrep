@@ -94,7 +94,7 @@ public class TempTester {
                 .mapToDouble(Course::getGrade)  // Map each course to its grade as a double
                 .sum();  // Sum up all the grades
 
-        double totalStreamNumberOfGrades = comp1113Grades.size();  // This should be comp1113StreamGrades.size() instead of comp1113Grades.size()
+        double totalStreamNumberOfGrades = comp1113StreamGrades.size();  // This should be comp1113StreamGrades.size() instead of comp1113Grades.size()
         double avgStreamGradeComp1113 = totalNumberOfGrades > 0 ? streamSum / totalNumberOfGrades : 0.0;  // Calculate the average grade, handling the case of no grades
 
         System.out.printf(
@@ -134,6 +134,7 @@ public class TempTester {
             }
         };
         worstStudentThread.start();  // Start the thread's execution asynchronously
+
 
     }
 }
